@@ -33,7 +33,7 @@ function MyApp({
   const [showChild, setShowChild] = useState(false);
   const { chains, provider } = configureChains(
     [chain.goerli],
-    [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+    [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID })]
   );
 
   const { connectors } = getDefaultWallets({
